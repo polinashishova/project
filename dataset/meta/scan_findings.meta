@@ -1,0 +1,19 @@
+dataset_name: github_ip_security_scan
+version: 1.0
+date: 2026-09-19
+
+target_source: GitHub Meta API
+target_api: https://api.github.com/meta
+
+tools_used:
+  - Nmap
+  - Masscan
+  - Nikto
+
+scan_scope: only authorized/self-owned resources
+
+github_meta_ranges:
+  description: Public GitHub infrastructure ranges obtained from Meta API.
+  note: These ranges were not treated as self-owned scan targets.
+
+expert: Polina Shishova
